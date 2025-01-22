@@ -8,6 +8,30 @@
   background-color: whitesmoke;
 }
 /* ... */
+/* menu-icons */
+nav {
+  position: relative;
+  padding: 10px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  display: none;
+  position: absolute;
+  right: 20px;
+}
+
+/* menu-icons-end */
+
 /* Button-section */
 .btn {
   color: white;
@@ -45,16 +69,16 @@ nav {
   gap: 10px;
 }
 /* nav-bar-manu-section */
-/* ul { */
+ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/* ul li { */
+ul li {
   list-style: none;
   margin-right: 3rem;
 }
-/* ul li a { */
+ul li a {
   text-decoration: none;
   color: #fea301;
 }
@@ -132,37 +156,20 @@ nav {
   padding: 3%;
 }
 .curriculum-section .card-one {
-  box-shadow: inset 0px 20px 0px #01acfd;
-}
-.curriculum-section .card-one:hover {
-  background-color: #01acfd;
-}
-.curriculum-section .card-one:hover a,
-.curriculum-section .card-one:hover p {
-  color: white;
+  height: 481.5px;
+  width: 367.8px;
+  background-image: linear-gradient(180deg, #def5ff, #ffffff);
 }
 .curriculum-section .card-two {
-  box-shadow: inset 0px 20px 0px #fea301;
+  height: 481.5px;
+  width: 367.8px;
+  background-image: linear-gradient(180deg, #fff4dc, #ffffff);
 }
-.curriculum-section .card-two:hover p {
-  color: white;
-}
-.curriculum-section .card-two:hover {
-  background-color: #fea301;
-}
-.curriculum-section .card-two:hover a {
-  color: white;
-}
-
 .curriculum-section .card-three {
-  box-shadow: inset 0px 20px 0px #5d58ef;
-}
-.curriculum-section .card-three:hover {
-  background-color: #5d58ef;
-}
-.curriculum-section .card-three:hover a,
-.curriculum-section .card-three:hover p {
-  color: white;
+  /* box-shadow: inset 0px 20px 0px #fff4dc; */
+  height: 481.5px;
+  width: 367.8px;
+  background-image: linear-gradient(180deg, #f2e8ff, #ffffff);
 }
 .curriculum-section .card-text {
   font-size: 1.5rem;
@@ -191,7 +198,7 @@ nav {
 }
 .icon-border {
   /* border: 1px solid; */
-  padding: 15px;
+  padding: 8px;
   border-radius: 100%;
   background-color: #fea301;
 }
@@ -213,7 +220,12 @@ nav {
 }
 .stories-card-left {
   background-color: white;
-  border-radius: 15px;
+  border-radius: 20px;
+  padding: 100px 100px 100px 100px;
+}
+.stories-card-left img {
+  width: 540px;
+  height: 330px;
 }
 .stories-card-left time {
   background-color: #05d4df;
@@ -226,7 +238,7 @@ nav {
 .stories-card-left img,
 .stories-card-right img {
   width: 100%;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 15px 15px 0px 0px;
 }
 .stories-card-left-info h3 {
   font-size: 1.5rem;
@@ -272,9 +284,204 @@ footer {
   padding: 5% 0;
   margin-top: 3%;
 }
-.container{
-  width: 1140px;
-  margin: auto;
+
+footer section {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+footer section .logo-text-img,
+footer section .about-school,
+footer section .social-icons {
+  flex-basis: 25%;
+}
+
+footer section .logo-text-img img {
+  position: relative;
+  right: 10px;
+  bottom: 10px;
+}
+
+footer section .logo-text-img h3 {
+  font-size: 2.3rem;
+  color: white;
+  display: inline-block;
+  margin-bottom: 0;
+  position: relative;
+  bottom: 20px;
+}
+
+footer section .logo-text-img p {
+  font-size: 20px;
+  color: white;
+}
+
+footer section .about-school h3,
+footer section .social-icons h3 {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+
+footer section .about-school a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10%;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+footer section .social-icons {
+  flex-basis: 25%;
+  text-align: center;
+}
+
+footer section .social-icons h3 {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+footer section .social-icons .social-icons {
   display: flex;
   justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
 }
+
+footer section .social-icons .social-icons a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* responsive-section-mobile-design */
+@media screen and (max-width: 576px) {
+  .header,
+  .main {
+    max-width: none;
+    width: 100%;
+  }
+  /* menu-icons */
+  .menu-icon {
+    width: 5px;
+    font-size: 40px;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    display: block;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+  }
+  nav {
+    border-bottom: 1px solid #fea301;
+    padding: 2% 5%;
+  }
+  /* contact-button-hide */
+  nav .nav-btn,
+  .logo-title,
+  nav ul {
+    display: none;
+  }
+  /* banner-section */
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .left-banner,
+  .card-design {
+    text-align: center;
+    width: 85%;
+  }
+  .banner-img {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+  .banner-text,
+  .curriculum-section-title h1 {
+    font-size: 20px;
+  }
+  /* card-section */
+  .curriculum-section .card {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .curriculum-section .card-t {
+    font-size: 1rem;
+  }
+  .curriculum-section .card p {
+    font-size: 14px;
+  }
+  .arrow-icon {
+    display: none;
+  }
+  .curriculum-section .card-design img {
+    margin-top: 5%;
+  }
+
+  /* stories-section */
+  .stories .stories-card-left {
+    display: none;
+  }
+  .stories {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .stories .stories-card-left-info h3 {
+    font-size: 12px;
+  }
+  .stories time {
+    top: -25px;
+  }
+
+  /* footer */
+  footer section {
+    flex-direction: column;
+    width: 90%;
+  }
+  footer section .logo-text-img h3 {
+    font-size: 1.8rem;
+  }
+  footer section .logo-text-img img {
+    width: 25%;
+    position: relative;
+    right: 15px;
+    top: 10px;
+    bottom: 12px;
+  }
+
+  footer section .about-school h3,
+  footer section .social-icons h3 {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  footer section .logo-text-img h3 {
+    bottom: 0;
+  }
+  footer section .logo-text-img p,
+  footer section .about-school a,
+  footer section .social-icons a {
+    font-size: 16px;
+    margin-bottom: 5%;
+    text-align: left;
+  }
+  footer section .social-icons {
+    flex-basis: 25%;
+    text-align: left;
+  }
+}
+/* All-Section-Done */
+/* Prattay-Saha */
