@@ -139,60 +139,108 @@ ul li a {
   margin-bottom: 5%;
 }
 /* card-section */
-.curriculum-section .card {
+.standard-curriculum-container {
+  width: 100%;
+  height: 879px;
+  background-image: url(/assets/bg.png);
+}
+
+.standard-curriculum {
+  font-size: 46px;
+  font-weight: bold;
+  font-family: "Quicksand" sans-serif;
+  color: black;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  margin: 0;
+}
+
+.cards-container {
+  width: 1160px;
+  height: 481px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 5%;
-  gap: 20px;
+  align-items: center;
+  gap: 28px;
 }
-.curriculum-section .card p {
-  line-height: 25px;
-}
-.card-design {
-  width: 400px;
-  background-color: white;
-  box-shadow: 20px;
-  border-radius: 10px;
-  padding: 3%;
-}
-.curriculum-section .card-one {
+
+.sc-card-1 {
   width: 367.8px;
   height: 446.78px;
   border-radius: 18px;
   background-color: #def5ff;
   background-image: linear-gradient(180deg, #def5ff, white);
 }
-.curriculum-section .card-two {
+
+.sc-card-2 {
   width: 367.8px;
   height: 446.78px;
   background-color: #fff4dc;
   border-radius: 18px;
   background-image: linear-gradient(180deg, #fff4dc, white);
 }
-.curriculum-section .card-three {
+
+.sc-card-3 {
   width: 367.8px;
   height: 446.78px;
   background-color: #f2e8ff;
   border-radius: 18px;
   background-image: linear-gradient(180deg, #f2e8ff, white);
 }
-.curriculum-section .card-text {
-  font-size: 1.5rem;
+
+.sc-card-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 32px;
 }
-.card-one a,
-.card-two a,
-.card-three a {
+
+.sc-card-title {
+  text-align: center;
+  font-family: "Quicksand" sans-serif;
   font-weight: bold;
+  font-size: 24px;
+}
+
+.sc-card-subtitle {
+  text-align: center;
+  font-family: "Quicksand" sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 0 40px;
+}
+
+.kinder-read-more {
   text-decoration: none;
+  text-align: center;
+  display: block;
+  color: #64c8ff;
+  font-family: "Quicksand" sans-serif;
+  font-weight: bold;
+  font-size: 15px;
 }
-.curriculum-section .card-one a {
-  color: #01acfd;
+
+.elementary-read-more {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  color: #f0aa00;
+  font-family: "Quicksand" sans-serif;
+  font-weight: bold;
+  font-size: 15px;
 }
-.curriculum-section .card-two a {
-  color: #fea301;
-}
-.curriculum-section .card-three a {
-  color: #5d58ef;
+
+.middle-read-more {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  color: #8700ff;
+  font-family: "Quicksand" sans-serif;
+  font-weight: bold;
+  font-size: 15px;
 }
 /*  */
 .arrow-icon {
@@ -208,82 +256,178 @@ ul li a {
   background-color: #fea301;
 }
 /* Our-Stories-Section */
-.stories {
-  background-image: url(/assets/bg.png);
-  background-size: contain;
+.our-stories-container {
+  width: 100%;
+  height: 1018px;
+  background-image: linear-gradient(
+      to top,
+      rgba(254, 163, 1, 0.3) 30%,
+      rgba(254, 163, 1, 0) 100%
+    ),
+    url("/assets/bg.png");
 }
-.stories {
-  padding: 5% 0;
-}
-.stories h1 {
+
+.our-stories {
+  font-size: 46px;
+  font-weight: bold;
+  color: black;
   text-align: center;
-  margin-bottom: 3%;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  margin: 0;
 }
-.stories-card-a {
+
+.our-stories-cards-container {
+  width: 1160px;
+  height: 630px;
+  margin: auto;
+}
+
+.flex-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   gap: 20px;
 }
-.stories-card-left {
-  background-color: white;
-  border-radius: 20px;
-  /* padding: 50px 50px 50px 50px; */
+
+.flex-item1,
+.flex-item2 {
+  width: 50%;
+  height: auto;
 }
-.stories-card-left time {
-  background-color: #05d4df;
-  color: white;
-  padding: 3% 5%;
-  border-radius: 30px;
+
+.flex-item1 {
+  background: white;
+  height: 630px;
+  border-radius: 16px;
   position: relative;
-  top: -40px;
 }
-.stories-card-left img,
-.stories-card-right img {
-  width: 100%;
-  border-radius: 15px 15px 0px 0px;
-}
-.stories-card-left-info h3 {
-  font-size: 1.5rem;
-}
-.stories-card-left-info p {
-  margin-top: 3rem;
-  font-size: 20px;
-}
-.stories-card-left-info,
-.stories-card-right-info {
-  padding: 5%;
-}
-.stories-card-b {
+
+.grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: space-around;
-  align-items: center;
-  gap: 15px;
+  grid-template-columns: auto auto;
+  gap: 20px;
 }
-.stories-card-right {
-  border-radius: 15px;
-  background-color: white;
-}
-.stories-card-b time {
-  background-color: #95b226;
-  color: white;
-  padding: 3% 5%;
-  border-radius: 30px;
-  margin-left: 5px;
+
+.grid-item1,
+.grid-item2,
+.grid-item3,
+.grid-item4 {
+  background: white;
+  width: 290px;
+  height: 300px;
+  border-radius: 16px;
   position: relative;
-  top: -35px;
 }
-.stories-card-b .time-color {
-  background-color: #5d58ef;
+
+.story-image {
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  margin-bottom: 38px;
 }
-/* View-Button */
-.view-btn-section {
+
+.story-image-one {
+  width: 100%;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  margin-bottom: 38px;
+}
+
+.date-card-one {
+  background-color: #95b226;
+  border-radius: 47px;
+  width: 174px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  top: 157px;
+  z-index: 10;
+  left: 38px;
+}
+
+.date-card-two {
+  background-color: #5d58f0;
+  border-radius: 47px;
+  width: 174px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  top: 157px;
+  z-index: 10;
+  left: 38px;
+}
+
+.date-card-three {
+  background-color: #3cd8e8;
+  border-radius: 47px;
+  width: 174px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  top: 330px;
+  z-index: 10;
+  left: 38px;
+}
+
+.story-title-one {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: start;
+  margin-top: 0;
+}
+
+.story-card-one-content {
+  padding: 38px;
+}
+
+.story-title {
+  font-size: 16px;
+  font-weight: bold;
   text-align: center;
+  margin-top: 0;
 }
+
+.story-card-one-description {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.view-all-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-all-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  width: 197px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 80px;
+}
+
 /* footer-section */
 footer {
   background-color: #01acfd;
-  padding: 5% 0;
-  margin-top: 3%;
 }
 
 footer section {
@@ -304,9 +448,11 @@ footer section .logo-text-img img {
   right: 10px;
   bottom: 10px;
 }
+.kids-education {
+  font-size: 42px;
+}
 
 footer section .logo-text-img h3 {
-  font-size: 2.3rem;
   color: white;
   display: inline-block;
   margin-bottom: 0;
@@ -414,37 +560,101 @@ footer section .social-icons .social-icons a {
     font-size: 20px;
   }
   /* card-section */
-  .curriculum-section .card {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+  .standard-curriculum-container {
+    width: 100%;
+    height: 100%;
   }
-  .curriculum-section .card-t {
-    font-size: 1rem;
+
+  .cards-container {
+    width: 100%;
+    height: 100%;
+    display: block;
+    gap: 0;
   }
-  .curriculum-section .card p {
-    font-size: 14px;
+
+  .sc-card-1,
+  .sc-card-2,
+  .sc-card-3 {
+    width: 100%;
   }
-  .arrow-icon {
-    display: none;
-  }
-  .curriculum-section .card-design img {
-    margin-top: 5%;
+
+  .standard-curriculum {
+    font-size: 26px;
+    font-weight: bold;
+    font-family: "Quicksand" sans-serif;
+    color: black;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin: 0;
   }
 
   /* stories-section */
-  .stories .stories-card-left {
+  .our-stories-container {
+    width: auto;
+    height: auto;
+    padding: 16px;
+  }
+
+  .our-stories-cards-container {
+    width: 100%;
+    height: 100%;
+    padding: 40px auto;
+  }
+
+  .flex-item1 {
     display: none;
   }
-  .stories {
-    width: 90%;
-    margin: 0 auto;
+
+  .grid-container {
+    gap: 11px;
   }
-  .stories .stories-card-left-info h3 {
-    font-size: 12px;
+
+  .grid-item1,
+  .grid-item2,
+  .grid-item3,
+  .grid-item4 {
+    background: white;
+    width: 173px;
+    height: 180px;
   }
-  .stories time {
-    top: -25px;
+
+  .story-image {
+    width: 173px;
+    height: 105px;
+  }
+
+  .date-card-one {
+    width: 103px;
+    height: 22px;
+    font-size: 9px;
+    top: 99px;
+  }
+
+  .date-card-two {
+    width: 103px;
+    height: 22px;
+    font-size: 9px;
+    top: 99px;
+  }
+
+  .story-title {
+    font-size: 9px;
+  }
+
+  .our-stories {
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+
+  .view-all-btn {
+    margin-top: 20px;
+    margin-bottom: 40px;
   }
 
   /* footer */
